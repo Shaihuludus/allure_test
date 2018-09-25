@@ -9,7 +9,7 @@ properties(
 
 node {
     stage('Checkout Asset Share Commons'){
-        git branch: "master", url: 'ssh://git@bitbucket.cognifide.com/~daniel.madejek/bobcattest.git'
+        git branch: "master", url: 'https://github.com/Shaihuludus/allure_test.git'
 
     }
 
