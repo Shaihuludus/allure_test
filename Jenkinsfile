@@ -14,7 +14,7 @@ node {
     }
 
     stage('Run Tests'){
-        sh "./gradlew clean test -p ${rootDir} -Dbobcat.config.contexts=chrome,integration"
+        sh "./gradlew clean test -Dbobcat.config.contexts=chrome"
         archiveArtifacts "/build/reports/allure-report/**/*.*"
     }
 
